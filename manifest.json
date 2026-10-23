@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Priority Web Extension",
+  "version": "1.0",
+  "description": "Enable Priority Web on priority.smkb.ac.il",
+  
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://priority.smkb.ac.il/*"
+  ],
+
+  "action": {
+    "default_title": "Priority Web"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  }
+}
